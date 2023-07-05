@@ -1,0 +1,196 @@
+body {
+	background-image: url('../images/mainBackground.png');
+}
+
+.hiddencell{
+	stroke: transparent;
+	fill: transparent;
+}
+
+#container1 {
+	display: block;
+	/*flex-direction: column;*/
+}
+
+#pageheader {
+	display: block;
+	flex: 1;
+}
+
+#pagedashboard {
+	display: flex;	
+	flex-direction: row;
+	flex: 10;
+}
+
+/*LEFT PANE*/
+.leftpane {
+	display: flex;
+	flex-direction: column;
+	flex: 2;
+	height: 90vh;
+}
+
+/*CENTRAL PANE*/
+.centralpane {
+	display: flex;
+	flex-direction: column;
+	flex: 1;
+	height: 90vh;
+}
+
+/*RIGHT PANE*/
+.rightpane {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	flex: 2;
+	height: 90vh;
+}
+
+/* LEFT CHARTS */
+#leftchart1 {
+	display: flex;
+	flex-direction: column;
+	flex: 1;
+}
+
+#leftchart2 {
+	display: flex;
+	flex-direction: column;
+	flex: 1;
+}
+
+#leftchart3 {
+	display: flex;
+	flex-direction: column;
+	flex: 1;
+}
+
+/* LEFT CHARTS TITLE */
+.charttile {
+	display: block;
+	/*flex: 3;*/
+}
+
+/* LEFT CHARTS SVG CONTENTS */
+#svgcontentleftchart1 {
+	display: block;
+	/*flex: 10;*/
+}
+
+#svgcontentleftchart2 {
+	display: block;
+	/*flex: 10;*/
+}
+
+#svgcontentleftchart3 {
+	display: block;
+	/*flex: 10;*/
+}
+
+/* CENTRAL */
+#centraltitle {
+	display: block;
+	flex: 1;
+}
+
+#coverscroll {
+	display: block;
+	overflow: auto;
+	flex: 10;
+	/*visibility: hidden;*/
+}
+/*
+#covercontent { 
+	display: block;
+	visibility: visible;
+}
+
+#coverscroll:hover, #coverscroll:focus { 
+	visibility: visible;
+}
+
+#coverscroll {
+	transition: visibility 0.5s;
+}
+
+#coverscroll:hover { 
+	transition: visibility 0s 0.5s; 
+}
+*/
+/* RIGHT */
+#rightchart1 {
+	display: flex;
+	flex-direction: column;
+	flex: 1;
+}
+
+#rightchart2 {
+	display: flex;
+	flex-direction: column;
+	flex: 1;
+}
+
+#svgcontentrightchart1 {
+	display: block;
+	flex: 10;
+}
+
+#svgcontentrightchart2 {
+	display: block;
+	flex: 10;
+}
+
+/*TEXT SIZE*/
+.ylegend, .xaxis, .yaxis {
+	font-size: 0.7em;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 100;
+}
+
+.dotlabel {
+	font-size: 1em;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+}
+
+.title {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+	font-size: 2em;
+	text-align: center;
+	border: none;
+	background: none;
+}
+
+.subtitle {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+	font-size: 1em;
+	text-align: center;
+	border: none;
+	background: none;
+}
+
+.headertitle{
+	background-image: url('../images/mainBackground.png');
+	font-size: 1.5em;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 100;
+	text-align: center;
+	border: none;
+	color: black;
+}
+
+.noevent {
+	pointer-events: none;
+}
+
+/*BACKGROUND*/
+.svgs {
+	/*background-image: url('../images/nightBackground.png');*/
+	/*background-color: #f2f2f2;*/
+	/*background-color: white;*/
+	border-radius: 5px;
+}

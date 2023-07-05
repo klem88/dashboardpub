@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+
+<title>Dashboard</title>
+
+<link rel="stylesheet" href="css/style.css"><!--../-->
+<link href="https://fonts.googleapis.com/css?family=Roboto:100, 300, 700" rel="stylesheet">
+
+<script src="https://d3js.org/d3.v5.min.js"></script>
+<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+
+</head>
+
+<body>
+<div class="deviceAlert"><h3>L'affichage de votre écran ne permet pas une visualisation correcte de ce site. Visitez nous avec un autre support.</h3>
+</div>
+
+
+	<div class="header">
+		<div class="mainLogo">
+		    <a href="#"><img id="headerlogo" src="images/mainLogo_fr.png" alt="DashBoard"></a>
+	    </div>
+	</div>
+	<div id="container1">
+		<div class="title", id="pageheader">
+			<!--<div class="title headertitle noevent">Header</div>-->
+			<p>Institutions : <span class="selectContainer"><select class="headertitle" id="functionlist"></select></span></p>
+		</div>
+
+		<div id="pagedashboard">
+				
+				<div class="leftpane">
+					<div id="leftchart1">
+						<button class="title charttile"> #Livres </button>
+								<!--<span class="keyRatiosItem">
+									<h1 id="meanlivre"></h1>
+									<h2>livres</h2>
+									<h3>par mois</h3>
+									<h3>en moyenne</h3>
+								</span>-->
+						<div id="svgcontentleftchart1" class="svgs"></div>
+					</div>
+					<!--<div id="leftchart2">
+						<button class="title charttile"> #Pages </button>
+								<span class="keyRatiosItem">	
+									<h1 id="meanpage"></h1>
+									<h2>pages</h2>
+									<h3>par mois</h3>
+									<h3>en moyenne</h3>
+								</span>
+						<div id="svgcontentleftchart2" class="svgs"></div>
+					</div>-->
+					<div id="leftchart3">
+						<span class="title charttile noevent"> #Institutions </span>
+								<!--<span class="keyRatiosItem">
+									<h1><span id="propcompte"></span>%</h1>
+									<h3>par Compte Actif</h3>
+									<h1><span id="propip"></span>%</h1>
+									<h3>Session IP</h3>
+								</span>-->
+						<div id="svgcontentleftchart3" class="svgs"></div>
+					</div>
+				</div>
+				
+				<div class="centralpane">
+					<div class="centerTop">
+						<button id="centraltitle" class="title charttile"> TOP </button> 
+						<span id="centralsubtitle" class="subtitle" > SubTitle </span>
+					</div>
+					<div id="coverscroll">
+						<div id="covercontent"></div>
+					</div>
+
+				</div>
+
+				<div class="rightpane">
+					<div id="rightchart1">
+							<!--<div class="keyRatiosContainer">
+								<div class="item">
+									<h1 id="krpagecompte"></h1>
+									<h2>pages</h2>
+									<h3>par Compte Actif</h3>
+									<h3>(<span class="refplatforme"></span>: <span id="refpagecompte"></span>)</h3>
+								</div>
+								<div class="item">
+									<h1 id="krpageip"></h1>
+									<h2>pages</h2>
+									<h3>par Session IP</h3>
+									<h3>(<span class="refplatforme"></span>: <span id="refpageip"></span>)</h3>
+								</div>
+								<div class="item">
+									<h1 id="krlivreip"></h1>
+									<h2>livres</h2>
+									<h3>par Session IP</h3>
+									<h3>(<span class="refplatforme"></span>: <span id="reflivreip"></span>)</h3>
+								</div>
+								<div class="item">
+									<h1 id="krlivrecompte"></h1>
+									<h2>livres</h2>
+									<h3>par Compte Actif</h3>
+									<h3>(<span class="refplatforme"></span>: <span id="reflivrecompte"></span>)</h3>
+								</div>
+							</div>-->
+					</div>
+					<div id="rightchart2">
+						<button class="title charttile"> #Livre </button>
+						<div id="svgcontentrightchart2" class="svgs"></div>
+					</div>
+				</div>
+			
+		</div>
+	</div>
+</body>
+
+
+<script src="js/linechart.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/dothemagicdance.js" type="text/javascript" charset="utf-8"></script>
+</html>
